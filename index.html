@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="BB.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="BB.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width">
+    <title>Backstreet Bites</title>
+</head>
+<body>
+<div id="BBody">
+    <div id="banner">
+        <img class='c box' id="headerIMG" src="Images/TransLogo_xxxhdpi.png">
+        <div id="bannerContainer">
+            <span id="titleText">BACKSTREET BITES</span>
+
+
+        </div>
+    </div>
+
+    <div id="searchContainer" class="c box border">
+        <div id="search">
+            <select id="searchName" class="city dropdown">
+                <option value="Detroit">Detroit, MI</option>
+                <option value="Raleigh">Raleigh, NC</option>
+            </select>
+            <select id="searchDistance" class="dropdown">
+                <option value="1">1 mile</option>
+                <option value="2">2 miles</option>
+                <option value="3">3 miles</option>
+                <option value="4">4 miles</option>
+                <option value="5">5 miles</option>
+                <option value="10">10 miles</option>
+            </select>
+            <button class="searchButton" onclick="searchBtnClicked()">Search</button>
+        </div>
+        <div id="searchBottom">
+            <div>
+                <ul>
+                    <li>Weather</li>
+                    <li>updates</li>
+                    <li>lorem isum lorem isum lorem isum
+                        lorem isum lorem isum lorem isum
+                        lorem isum lorem isum lorem isum
+                        lorem isum lorem isum lorem isum
+                        lorem isum lorem isum lorem isum
+                        lorem isum lorem isum lorem isum
+                        lorem isum lorem isum lorem isum
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div id="results" class="results c">
+
+    </div>
+
+</div>
+
+
+<div id="map"></div>
+<div id="modal" class="modal">
+    <div id="moreInfoContainer">
+    </div>
+    <div id="moreInfo" class="box">
+        FOOD TRUCK NAME: <span id="modalFoodTruckName"></span><br>
+        INFO<br>
+        MENU <br>
+    </div>
+</div>
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAabym0S3Im2NHzIw38lPS84pPpaSlF6Z4&callback=initMap"
+        async defer></script>
+</html>
