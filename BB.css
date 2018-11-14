@@ -44,7 +44,7 @@ body {
 }
 
 #titleText {
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-size: 26px;
     font-family: 'Verdana';
     color: white;
@@ -95,13 +95,16 @@ body {
     color: white;
     width: 200px;
 }
+#searchText{
+    width:200px;
+}
 
 .border {
     border-radius: 3px;
 }
 
 #headerIMG {
-    height: 100%;
+    height: 50px;
     float: left;
 }
 
@@ -169,7 +172,7 @@ body {
     position: absolute;
     height: 70px;
     float: left;
-    bottom: 30%;
+    top: 35%;
     border: 2px solid #be1e23;
 }
 
