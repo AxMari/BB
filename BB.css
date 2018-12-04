@@ -84,6 +84,12 @@ body {
 #searchDistance {
    width: 200px;
 }
+#searchName > option{
+  color:black
+}
+#searchDistance > option{
+  color:black
+}
 
 #BBody {
    position: relative;

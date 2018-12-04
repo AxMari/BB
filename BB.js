@@ -1,8 +1,4 @@
-**
 
-* Created by alexismarien on 11/14/18.
-
-*/
 
 $(document).ready(function () {
 
