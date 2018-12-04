@@ -114,7 +114,7 @@ body {
 
 #searchContainer {
     color: white;
-    height: 80vh;
+    height: initial;
     width: 250px;
     top: calc(5vh + 1rem + 1rem);
     left: 1rem;
