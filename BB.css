@@ -1,87 +1,100 @@
 #map {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    float: right;
-    position: relative;
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
+   float: right;
+   position: relative;
 }
 
 #moreInfo {
-    position: absolute;
-    z-index: 15;
-    top: 20vh;
-    left: 20vw;
-    height: 60vh;
-    width: 60vw;
-    background: white;
-    opacity: 100%;
-    border-radius: 5px;
-    padding: 1rem
-    /* display:none; */
+   position: absolute;
+   z-index: 15;
+   top: 20vh;
+   left: 20vw;
+   height: 60vh;
+   width: 60vw;
+   background: red;
+   opacity: 1;
+   border-radius: 5px;
+   padding: 1rem;
+   overflow: auto;
+   color: white;
+   font-family: monospace;
+   /* display:none; */
 
 }
 
 .modal {
-    /* display:none; */
+   /* display:none; */
 }
 
 #moreInfoContainer {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    z-index: 10;
-    background: #666666;
-    opacity: .4;
-    /* display:none; */
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   z-index: 10;
+   background: #666666;
+   opacity: .4;
+   /* display:none; */
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   padding: 0;
 }
 
 #titleText {
-    padding-left: 1rem;
-    font-size: 26px;
-    font-family: 'Verdana';
-    color: white;
-    font-weight: bold;
-    text-shadow: 3px 2px 3px #888888;
+   padding-left: 1rem;
+   font-size: 26px;
+   font-family: 'Verdana';
+   color: white;
+   font-weight: bold;
+   text-shadow: 3px 2px 3px #888888;
+}
+
+.foodImage {
+   height: 3rem;
+   width: 3rem;
+   float: left;
 }
 
 .dropdown {
-    margin-bottom: 5px;
-    background: transparent;
-    color: white;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 2px solid white;
-    height: 29px;
-    overflow: hidden;
+   margin-bottom: 5px;
+   background: transparent;
+   color: white;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   border: 2px solid white;
+   height: 29px;
+   overflow: hidden;
+}
+
+#modalFoodTruckName {
+   text-align: center;
 }
 
 #searchName {
-    width: 200px;
+   width: 200px;
 }
 
 #searchDistance {
-    width: 200px;
+   width: 200px;
 }
 
 #BBody {
-    position: relative;
+   position: relative;
 }
 
 .c {
-    pointer-events: auto;
+   pointer-events: auto;
 }
 
 .city {
-    float: left;
+   float: left;
 }
 
 .distance {
@@ -89,137 +102,179 @@ body {
 }
 
 .searchButton {
-    float: left;
-    border: #666666 2px solid;
-    background: #666666;
-    color: white;
-    width: 200px;
+   float: left;
+   border: #666666 2px solid;
+   background: #666666;
+   color: white;
+   width: 200px;
 }
-#searchText{
-    width:200px;
+
+#searchText {
+   width: 200px;
 }
 
 .border {
-    border-radius: 3px;
+   border-radius: 3px;
 }
 
 #headerIMG {
-    height: 50px;
-    float: left;
+   height: 50px;
+   float: left;
 }
 
 .box {
-    box-shadow: 3px 2px 3px #888888;
+   box-shadow: 3px 2px 3px #888888;
+}
+
+#cityText {
+   font-family: monospace;
 }
 
 #searchContainer {
-    color: white;
-    height: 80vh;
-    width: 250px;
-    top: calc(5vh + 1rem + 1rem);
-    left: 1rem;
-    float: left;
-    position: absolute;
-    z-index: 2;
-    background: #ec1c24;
+   color: white;
+   height: initial;
+   width: 250px;
+   top: calc(5vh + 1rem + 1rem);
+   left: 1rem;
+   float: left;
+   position: absolute;
+   z-index: 2;
+   background: #ec1c24;
 }
 
 #search {
-    height: 100px;
-    padding: 10%
+   height: 100px;
+   padding: 1.5rem 2rem 2rem 1.5rem;
 }
 
 #bannerContainer {
 
 }
 
+.menuItem {
+   list-style-type: none;
+   height: 5rem;
+   width: calc(100% / 4);
+   display: inline-block;
+   margin: 1rem;
+   color: black;
+   padding: 1rem;
+   background: white;
+
+}
+
 #searchBottom {
-    position: absolute;
-    bottom: 0px;
-    background: white;
-    width: 100%;
-    height: 65%;
-    border-radius: 0 0 3px 3px;
-    color: black;
-    padding-top: 1rem;
+   position: absolute;
+   bottom: 0px;
+   background: white;
+   width: 100%;
+   height: 65%;
+   border-radius: 0 0 3px 3px;
+   color: black;
+   padding-top: 1rem;
 }
 
 #results {
-    z-index: 3;
-    position: absolute;
-    top: 66vh;
-    left: 30%;
-    /* border: 1px black solid; */
-    height: 25vh;
-    width: 900px;
-    /* background:green; */
+   z-index: 3;
+   position: absolute;
+   top: 66vh;
+   left: 30%;
+   /* border: 1px black solid; */
+   height: 25vh;
+   width: 900px;
+   /* background:green; */
 }
 
 .content {
-    position: relative;
-    padding: 5px;
-    height: 150px;
-    width: 350px;
-    background: #ec1c24;
-    margin: 1rem;
-    cursor: pointer;
-    color: white;
-    font-family: arial;
-    border: 3px solid #be1e23;
+   position: relative;
+   padding: 5px;
+   height: 150px;
+   width: 350px;
+   background: #ec1c24;
+   margin: 1rem;
+   cursor: pointer;
+   color: white;
+   font-family: arial;
+   border: 3px solid #be1e23;
 }
 
 .contentImg {
-    position: absolute;
-    height: 70px;
-    float: left;
-    top: 35%;
-    border: 2px solid #be1e23;
+   position: absolute;
+   height: 70px;
+   float: left;
+   top: 35%;
+   border: 2px solid #be1e23;
 }
 
 .contentName {
-    font-size: 16px;
-    font-weight: bold;
-    float: left;
+   font-size: 16px;
+   font-weight: bold;
+   float: left;
 }
 
 .contentRating {
-    float: right;
+   float: right;
 }
 
 .contentMoreInfo {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    border: 2px solid white;
-    background: white;
-    cursor: pointer;
-    color: #be1e23;
+   position: absolute;
+   bottom: 5px;
+   right: 5px;
+   border: 2px solid white;
+   background: white;
+   cursor: pointer;
+   color: #be1e23;
 }
 
 .contentDistance {
-    float: left;
+   float: left;
 }
 
 .contentDirections {
-    border: 2px solid white;
-    background: #be1e23;
-    cursor: pointer;
-    color: white;
-    float: left;
-    position: absolute;
-    bottom: 5px;
+   border: 2px solid white;
+   background: #be1e23;
+   cursor: pointer;
+   color: white;
+   float: left;
+   position: absolute;
+   bottom: 5px;
 }
 
 #banner {
-    width: 100%;
-    height: 5vh;
-    /* background:red; */
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: .5rem 1rem;
-    z-index: 2;
-    /* border: 1px solid black; */
+   width: 100%;
+   height: 5vh;
+   /* background:red; */
+   pointer-events: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: .5rem 1rem;
+   z-index: 2;
+   /* border: 1px solid black; */
 }
 
+.foodTitle {
+   display: block;
+   width: 100%;
+}
+
+.foodPrice {
+   float: right;
+}
+
+.foodDescription {
+   width: 75%;
+   height: 1rem;
+   display: inline-block;
+   float: right;
+}
+
+.foodContainer {
+   background: yellow;
+}
+
+#modalMenuTitle {
+   text-align: center;
+   font-size: 3rem;
+   font-family: monospace;
+}
