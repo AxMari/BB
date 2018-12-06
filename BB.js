@@ -172,13 +172,10 @@ function _moreInfo(name) {
 
 
 function _populateModal(truckData) {
-
-   console.log(truckData)
-
    _resetModal();
 
 
-   $.get('https://back-street-bites.appspot.com/_ah/api/backstreetbitesservice/v1/getMenuItems',
+   $.get('https://back-street-bites.appspot.com/_ah/api/backstreetbitesservice/v1/getMenuItems?fid=' + truckData.foodTruck.fid ,
 
        function (data) {
 
